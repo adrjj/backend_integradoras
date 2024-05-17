@@ -1,0 +1,54 @@
+<h1>Lista de Productos</h1>
+  
+<div class="contListhome">
+<ul class="list" id="productList">
+  <!-- Los productos se agregarán dinámicamente aquí -->
+</ul>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+
+    // Función para agregar un producto a la lista de productos
+    function addProductToList(newProduct) {
+        const productList = document.getElementById('productList');
+        const listItem = document.createElement('li');
+        listItem.textContent = `ID: ${newProduct.id} - ${newProduct.title}`;
+        productList.appendChild(listItem);
+    }
+
+    // Función para cargar la lista de productos cuando la página se carga inicialmente
+    function loadInitialProductList() {
+        fetch('/api/products') // Hacer una solicitud HTTP GET al servidor para obtener los productos
+            .then(response => response.json())
+            .then(products => {
+                products.forEach(product => {
+                    addProductToList(product);
+                });
+            })
+            .catch(error => {
+                console.error('Error al obtener los productos:', error);
+            });
+    }
+
+    // Escuchar el evento 'productAdded' y actualizar la lista de productos
+    socket.on('productAdded', (newProduct) => {
+        addProductToList(newProduct);
+    });
+
+    // Escuchar el evento 'productDeleted' y actualizar la lista de productos
+    socket.on('productDeleted', (deletedProductId) => {
+        const productList = document.getElementById('productList');
+        const items = productList.getElementsByTagName('li');
+        for (let i = 0; i < items.length; i++) {
+            if (items[i].textContent.includes(deletedProductId)) {
+                productList.removeChild(items[i]);
+                break;
+            }
+        }
+    });
+
+    // Cargar la lista de productos cuando la página se carga inicialmente
+    document.addEventListener('DOMContentLoaded', loadInitialProductList);
+</script>
