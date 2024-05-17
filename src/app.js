@@ -22,39 +22,18 @@ app.set("view engine", "handlebars");
 
 // Importing routers
 const productRouter = require('./router/products.router.js');
-//const cartRouter = require("./router/carts.router.js");
+const cartRouter = require("./router/carts.router.js");
 
 app.use("/api/products", productRouter);
-//app.use("/api/carts", cartRouter);
+app.use("/api/carts", cartRouter);
 
 const viewRouter = require('./router/views.router.js')
-//app.use("/home", viewRouter)
 app.use("/",viewRouter)
 
 // Configuración y manejo de eventos de WebSocket
 socketLogic(io, manager);
 
 
-
-/*
-app.get("/home", async (req, res) => {
-    try {
-        const productos = await manager.loadProducts();
-        res.render("home", { productos });
-    } catch (error) {
-        res.status(500).json({ error: "Error retrieving products.", message: error.message });
-    }
-});
-
-app.get("/realtimeproducts", async (req, res) => {
-    try {
-        const productos = await manager.loadProducts();
-        res.render("realTimeProducts", { productos });
-    } catch (error) {
-        res.status(500).json({ error: "Error retrieving products.", message: error.message });
-    }
-});
-*/
 http.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
