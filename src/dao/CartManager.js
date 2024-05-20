@@ -50,46 +50,24 @@ class CartController {
         }
     }
 
-   /*  createCart(req, res) {
-         try {
-             const newCart = {
-                 id: this.newID(),
-                 products: []
-             };
-             if (req.body.products && Array.isArray(req.body.products)) {
-                 newCart.products = req.body.products;
-             }
-             this.cart.push(newCart);
- 
-             fs.writeFile(path.join(__dirname, this.fileCart), JSON.stringify(this.cart, null, 2), (err) => {
-                 if (err) {
-                     res.status(500).json({ error: "Error al escribir en el archivo.", message: err.message });
-                 } else {
-                     res.status(200).json({ message: "Carrito creado exitosamente.", cart: newCart });
-                 }
-             });
-         } catch (error) {
-             res.status(500).json({ error: "Error al agregar el producto.", message: error.message });
-         }
-     }*/
- 
-     getCartProducts(req, res) {
-         try {
-             const rawData = fs.readFileSync(path.join(__dirname, this.fileCart));
-             const carts = JSON.parse(rawData);
- 
-             const cartId = parseInt(req.params.cid);
-             const cart = carts.find(cart => cart.id === cartId);
- 
-             if (!cart) {
-                 return res.status(404).json({ error: "Carrito no encontrado." });
-             }
- 
-             res.json(cart.productos);
-         } catch (error) {
-             res.status(500).json({ error: "Error al obtener los productos del carrito.", message: error.message });
-         }
-     }
+
+    getCartProducts(req, res) {
+        try {
+            const rawData = fs.readFileSync(path.join(__dirname, this.fileCart));
+            const carts = JSON.parse(rawData);
+
+            const cartId = parseInt(req.params.cid);
+            const cart = carts.find(cart => cart.id === cartId);
+
+            if (!cart) {
+                return res.status(404).json({ error: "Carrito no encontrado." });
+            }
+
+            res.json(cart.productos);
+        } catch (error) {
+            res.status(500).json({ error: "Error al obtener los productos del carrito.", message: error.message });
+        }
+    }
 
     addProductToCart(req, res) {
         try {

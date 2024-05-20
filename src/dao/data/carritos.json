@@ -3,8 +3,8 @@
     "id": 1,
     "productos": [
       {
-        "pid": 3,
-        "quantity": 1
+        "pid": 9,
+        "quantity": 18
       }
     ]
   },
@@ -12,16 +12,8 @@
     "id": 2,
     "productos": [
       {
-        "pid": 8,
-        "quantity": 1
-      },
-      {
-        "pid": 3,
-        "quantity": 8
-      },
-      {
-        "pid": 100,
-        "quantity": 1
+        "pid": 9,
+        "quantity": 18
       }
     ]
   },
@@ -29,22 +21,9 @@
     "id": 3,
     "productos": [
       {
-        "pid": 18,
-        "quantity": 5
+        "pid": 9,
+        "quantity": 18
       }
     ]
-  },
-  {
-    "id": 4,
-    "productos": [
-      {
-        "pid": 18,
-        "quantity": 5
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "productos": []
   }
 ]

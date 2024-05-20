@@ -1,11 +1,21 @@
+const dotenv = require("dotenv");
+dotenv.config();
 const express = require("express");
 const app = express();
 const http = require("http").Server(app);
 const io = require("socket.io")(http); // Importing the Socket.IO server
 const path = require('path');
 const exphbs = require("express-handlebars");
-const ProductManager = require("./dao/ProductsManager.js");
+//const ProductManager = require("./dao/ProductsManager.js");
+const ProductManager = require("./dao/productManagerDb.js");
 const manager = new ProductManager();
+//chat
+const ChatManager = require("./dao/chatManagerdb.js")
+const chat= new ChatManager
+
+
+const mongoose = require('mongoose');
+
 const socketLogic = require("./socket/socketLogica.js");
 const PORT = 8080;
 
@@ -27,12 +37,19 @@ const cartRouter = require("./router/carts.router.js");
 app.use("/api/products", productRouter);
 app.use("/api/carts", cartRouter);
 
-const viewRouter = require('./router/views.router.js')
+const viewRouter = require('./router/views.router.js');
 app.use("/",viewRouter)
 
-// Configuración y manejo de eventos de WebSocket
-socketLogic(io, manager);
+const chatRouter = require('./router/chat.router.js')
+app.use("/chat",chatRouter)
 
+// Configuración y manejo de eventos de WebSocket
+socketLogic(io, manager,chat);
+
+//coneccion con mongoose
+mongoose.connect(process.env.CONECCCION,)
+.then(()=>{console.log ("campeon del mundo, te conectaste a la base")})
+.catch(error=>console.error("te rechasaron, no pudiste conectarte a la base de datos",error))
 
 http.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);

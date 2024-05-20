@@ -42,5 +42,27 @@
     "stock": "15",
     "status": true,
     "category": "15"
+  },
+  {
+    "id": 14,
+    "title": "probando",
+    "description": "25",
+    "price": "25",
+    "thumbnail": "25",
+    "code": "25",
+    "stock": "25",
+    "status": true,
+    "category": "25"
+  },
+  {
+    "id": 15,
+    "title": "probando",
+    "description": "sadasd",
+    "price": "12",
+    "thumbnail": "dsadasd",
+    "code": "12",
+    "stock": "12",
+    "status": true,
+    "category": "asdasd"
   }
 ]

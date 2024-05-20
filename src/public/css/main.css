@@ -84,4 +84,33 @@ text-shadow: 2px 2px 5px black;
 .contListhome{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+/*------------Chat------------------*/
+.contChat{
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+    gap: 2rem;
+}
+.ContEnviar{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.inputEnviar{
+    height: 3rem;
+    width: 25rem;
+    border: 1px solid rgb(213, 209, 221);
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    outline: none;
+}
+.inputEnviar:focus{
+    border: 1px solid rgb(16, 209, 113);
 }

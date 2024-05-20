@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const ProductManager = require("../dao/ProductsManager.js");
+const ProductManager = require("../dao/productManagerDb");
 const manager = new ProductManager();
 
 router.post('/', async (req, res) => {
@@ -20,6 +20,7 @@ router.get('/', async (req, res) => {
     try {
         const productos = await manager.loadProducts();
         res.status(200).json(productos);
+       
     } catch (error) {
         res.status(500).json({ error: "Error al recuperar productos.", message: error.message });
     }
