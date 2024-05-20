@@ -4,30 +4,39 @@ En este proyecto se utilizo de la biblioteca de node.js
 
 -paht
 
--fylesystem
-Con el objetivo de avanazar con los primeros pasos para la funcionalidad de un Ecomerce.
-*Para probar su funcionalidad se utlizo postman.
+-fhandlebars
 
-*Cuenta con 3  archivos 
+-sweetalert2
 
-  router/
+-dotenv
 
-   -product.js: para manejar la logica de los endpoints get/post/delete/put para el manejo de la logica use el codigo del desafio N3 que conta de una clase
+-moongose
 
-   -cart.js: para manejar la logica de los endpoints get/post coloque la logica dentreo del mismo endponit lo que redujo probando otra forma de hacerlo.
-  
-  -app.js: une las rutas de los endpoint
+-socket.io
 
-Imagenes probando funcionalidad
+Este proyecto tiene la base de un ECOMERCE el paso mas importante es que esta conectado todo con la
+base de datos de MONGO db Atlas
+
+Cunentas con varias rutas
+api/products  (se maneja dede postman)
+api/carts (se maneja dede postman)
+
+Chat interno 
+/chat (vista con handlebars)
+
+Carga de productos y eliminacion de los mismos por el ID
+/realtimeProducts (vista con handlebars)
+
+Visualizacion de todos los productos cargados en la base de datos
+/home (vista con handlebars) 
 
 
-![Texto Alternativo](/imagenes/cantidad_carrito.png)
+![Texto Alternativo](/imagenes/chat.png)
 
-![Texto Alternativo](/imagenes/busqueda_por_id_de_carrito.png)
+![Texto Alternativo](/imagenes/chat_mongoDB.png)
 
-![Texto Alternativo](/imagenes/busquedapor_porducto.png)
+![Texto Alternativo](/imagenes/home.png)
 
-![Texto Alternativo](/imagenes/cargar_producto_nuevo.png)
+![Texto Alternativo](/imagenes/realTimeProducts.png)
 
-![Texto Alternativo](/imagenes/todos_los_productos.png)
 
