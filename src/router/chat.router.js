@@ -4,11 +4,7 @@ const ChatManager = require("../dao/chatManagerdb.js")
 
 router.get("/", async (req, res) => {
   try {
-      // Obtener los mensajes desde tu ChatManager
-      //const messages = await ChatManager.getMessages();
-      
-      // Renderizar la vista 'chat' y pasar los mensajes
-    //res.render('chat', { messages });
+    
 
      res.render('chat',{});
   } catch (error) {

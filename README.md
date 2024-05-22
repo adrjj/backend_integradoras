@@ -4,7 +4,7 @@ En este proyecto se utilizo de la biblioteca de node.js
 
 -paht
 
--fhandlebars
+-handlebars
 
 -sweetalert2
 
