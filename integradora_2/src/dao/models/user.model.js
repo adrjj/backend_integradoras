@@ -10,7 +10,8 @@ const sessionSchema = new mongoose.Schema({
         last_name: { type: String, },
         email: { type: String, required: true },
         password: { type: String, },
-        isAdmin: { type: Boolean, default: false },
+       
+        role:{type:String, default: 'user'},
         cart: {
 
                 productos: [{

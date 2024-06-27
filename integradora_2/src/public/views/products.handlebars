@@ -3,10 +3,13 @@
 {{#if welcomeMessage}}
     <!-- Si hay un mensaje de bienvenida, el usuario está autenticado, mostrar el enlace de cierre de sesión -->
     <p>{{{ welcomeMessage }}}</p>
-    <a href="/api/sessions/profile">Cerrar Sesión</a>
+    <a href="/api/sessions/profile">Perfil</a>
+    <a href="/api/carts">Mi carrito</a>
 {{else}}
     <!-- Si no hay mensaje de bienvenida, el usuario no está autenticado, mostrar el enlace de inicio de sesión -->
     <a href="/api/sessions/login">Iniciar Sesión</a>
+      <a href="/api/sessions/profile">Perfil</a>
+    <a href="/api/carts">Mi carrito</a>
 {{/if}}
 
 {{#if productos.docs.length}}
