@@ -1,0 +1,54 @@
+2024-07-30T16:01:12.247Z [debug]: Este es un mensaje de debug
+2024-07-30T16:01:12.249Z [info]: Este es un mensaje de info
+2024-07-30T16:01:12.249Z [warning]: Este es un mensaje de warning
+2024-07-30T16:01:12.249Z [error]: Este es un mensaje de error
+2024-07-30T16:28:56.457Z [debug]: Este es un mensaje de debug
+2024-07-30T16:28:56.458Z [info]: Este es un mensaje de info
+2024-07-30T16:28:56.458Z [warning]: Este es un mensaje de warning
+2024-07-30T16:28:56.458Z [error]: Este es un mensaje de error
+2024-07-30T21:14:38.436Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-07-30T21:14:38.490Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-07-30T21:14:38.491Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 669829ee9d28680d5977b2ab
+2024-07-30T21:14:44.200Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-07-30T21:14:44.354Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-07-30T21:14:44.355Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 669829ee9d28680d5977b2ab
+2024-07-30T21:35:49.919Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-07-30T21:35:50.036Z [debug]: Contenido del carrito del usuario:
+2024-07-30T21:35:56.942Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-07-30T21:35:57.143Z [debug]: Actualizando stock para el producto ID:
+2024-07-30T21:35:57.144Z [info]: Stock actualizado para todos los productos.
+2024-07-30T21:35:57.210Z [info]: Ticket creado:
+2024-07-30T21:35:59.628Z [info]: Correo electrónico enviado:
+2024-07-30T21:36:36.097Z [debug]: Este es un mensaje de debug
+2024-07-30T21:36:36.097Z [info]: Este es un mensaje de info
+2024-07-30T21:36:36.097Z [warning]: Este es un mensaje de warning
+2024-07-30T21:36:36.098Z [error]: Este es un mensaje de error
+2024-07-30T21:36:37.635Z [debug]: Este es un mensaje de debug
+2024-07-30T21:36:37.635Z [info]: Este es un mensaje de info
+2024-07-30T21:36:37.636Z [warning]: Este es un mensaje de warning
+2024-07-30T21:36:37.636Z [error]: Este es un mensaje de error
+2024-07-30T21:49:59.634Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-07-30T21:49:59.694Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-07-30T21:49:59.694Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 669829ee9d28680d5977b2ab
+2024-07-30T21:50:03.686Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-07-30T21:50:03.735Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-07-30T21:50:03.736Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 669829ee9d28680d5977b2ab
+2024-07-30T21:50:07.077Z [debug]: Creando carrito
+2024-07-30T21:50:07.184Z [info]: Carrito creado exitosamente para el usuario: 669829ee9d28680d5977b2ab
+2024-07-30T21:50:08.756Z [debug]: Creando carrito
+2024-07-30T21:50:08.860Z [info]: Carrito creado exitosamente para el usuario: 669829ee9d28680d5977b2ab
+2024-07-30T21:50:10.426Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-07-30T21:50:10.538Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-07-30T21:50:10.538Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 669829ee9d28680d5977b2ab
+2024-07-30T21:50:12.653Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-07-30T21:50:12.745Z [debug]: Contenido del carrito del usuario:
+2024-07-30T21:50:15.255Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-07-30T21:50:15.478Z [debug]: Actualizando stock para el producto ID:
+2024-07-30T21:50:15.583Z [debug]: Actualizando stock para el producto ID:
+2024-07-30T21:50:15.584Z [info]: Stock actualizado para todos los productos.
+2024-07-30T21:50:15.646Z [info]: Ticket creado:
+2024-07-30T21:50:18.021Z [info]: Correo electrónico enviado:
+2024-07-30T21:50:46.843Z [debug]: Este es un mensaje de debug
+2024-07-30T21:50:46.844Z [info]: Este es un mensaje de info
+2024-07-30T21:50:46.844Z [warning]: Este es un mensaje de warning
+2024-07-30T21:50:46.844Z [error]: Este es un mensaje de error
