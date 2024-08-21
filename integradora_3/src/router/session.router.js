@@ -4,8 +4,9 @@ const sessionModel = require("../models/user.model.js")
 const authenticatedMiddleware = require("../middleware/authenticated.js");
 const { createHash, isValidPassword } = require('../utils/utils.js');
 const passport = require("passport");
-const resetToken = require("../utils/generateResetToken.js")
-const  generateResetToken = resetToken()
+const generateResetToken = require("../utils/generateResetToken.js");
+const token = generateResetToken();
+
 const sendResetEmail =require("../utils/sendResetEmail.js")
 
 const CustomError = require("../services/custom.Error")
@@ -112,9 +113,9 @@ router.post("/logout", async (req, res) => {
 
 });
 
-router.post('/api/forgot-password', async (req, res) => {
+router.post('/forgot-password', async (req, res) => {
   const { email } = req.body;
-
+  console.log ("email",req.body)
   try {
       // Buscar al usuario en la base de datos por correo electrónico
       const user = await sessionModel.findOne({ email });
@@ -124,14 +125,14 @@ router.post('/api/forgot-password', async (req, res) => {
       }
 
       // Generar el token y la fecha de expiración
-      const token = generateResetToken();
+      const usetoken = token;
       const expirationTime = Date.now() + 3600000; // 1 hora
-
+      console.log("token", token)
       // Guardar el token y la expiración en la base de datos
-      user.resetPasswordToken = token;
+      user.resetPasswordToken = usetoken;
       user.resetPasswordExpires = expirationTime;
       await user.save();
-
+  
       // Enviar el correo de recuperación
       await sendResetEmail(email, token);
 
@@ -141,5 +142,48 @@ router.post('/api/forgot-password', async (req, res) => {
   }
 });
 
+router.post('/reset-password/:token', async (req, res) => {
+  const { token } = req.params;
+  const { newPassword } = req.body;
+  console.log(token, newPassword)
+  try {
+      // Verifica que el token sea válido y no haya expirado
+      const user = await sessionModel.findOne({ resetPasswordToken: token, resetPasswordExpires: { $gt: Date.now() } });
+      if (!user) {
+          return res.status(400).send('El token es inválido o ha expirado.');
+      }
+            // Cifra la nueva contraseña
+      newPasswordHash = createHash(newPassword)
+
+      user.password = newPasswordHash;
+      user.resetPasswordToken = undefined; // Elimina el token
+      user.resetPasswordExpires = undefined; // Elimina la expiración
+      await user.save();
+
+      //res.send('La contraseña ha sido actualizada con éxito.');
+      req.flash('success_msg', 'La contraseña ha sido cambiada con éxito.');
+      res.redirect("/api/sessions/login");
+
+  } catch (error) {
+      res.status(500).send('Hubo un error al restablecer la contraseña.');
+  }
+  
+});
+
+
+router.get('/cambiarPassword', async (req, res) => {
+  const { token } = req.query;
+
+  // Verificar si el token existe y es válido
+  const user = await sessionModel.findOne({ resetPasswordToken: token, resetPasswordExpires: { $gt: Date.now() } });
+  
+  if (!user) {
+      return res.status(400).send('El token es inválido o ha expirado.');
+  }
+
+  // Renderiza la vista del formulario de cambio de contraseña y pasa el token
+  res.render('cambiarPassword', { token });
+
+});
 
 module.exports = router;

@@ -11,6 +11,7 @@ const { initializePassport } = require("./config/passport.config.js")
 const errorHandler = require("./middleware/index.js")
 const loggerRouter = require('./router/logger.router.js');
 const logger = require('./utils/logger');
+const flash = require('connect-flash');
 
 const ProductController = require("./controllers/productController.js");
 const manager = new ProductController();
@@ -73,6 +74,13 @@ passport.deserializeUser((_id, done) => {
     UserModel.findById(_id, (err, user) => {
         done(err, user); // Devuelve el objeto de usuario completo
     });
+});
+app.use(flash());
+
+app.use((req, res, next) => {
+    res.locals.success_msg = req.flash('success_msg');
+
+    next();
 });
 
 const viewRouter = require('./router/views.router.js');

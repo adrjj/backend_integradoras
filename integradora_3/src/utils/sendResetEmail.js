@@ -10,7 +10,7 @@ async function sendResetEmail(userEmail, token) {
         }
     });
 
-    const resetUrl = `https://yourdomain.com/reset-password?token=${token}`;
+    const resetUrl = `http://localhost:8080/api/sessions/cambiarPassword?token=${token}`;
 
     const mailOptions = {
         from: process.env.EMAIL_USER,

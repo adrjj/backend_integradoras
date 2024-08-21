@@ -25,8 +25,8 @@ const sessionSchema = new mongoose.Schema({
                 }]
         },
         // Campos para la recuperación de contraseña
-        resetPasswordToken: { type: String },
-        resetPasswordExpires: { type: Date }
+        resetPasswordToken: { type: String, default: null },
+        resetPasswordExpires: { type: Date, default: null }
 
 });
 const sessionModel = mongoose.model(sessionCollection, sessionSchema)

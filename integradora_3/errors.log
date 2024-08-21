@@ -52,3 +52,30 @@
 2024-07-30T21:50:46.844Z [info]: Este es un mensaje de info
 2024-07-30T21:50:46.844Z [warning]: Este es un mensaje de warning
 2024-07-30T21:50:46.844Z [error]: Este es un mensaje de error
+2024-08-21T14:53:11.736Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-08-21T14:53:11.792Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-08-21T14:53:11.793Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-08-21T14:53:16.097Z [debug]: Creando carrito
+2024-08-21T14:53:16.194Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-08-21T14:53:17.025Z [debug]: Creando carrito
+2024-08-21T14:53:17.129Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-08-21T14:53:19.860Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-08-21T14:53:19.953Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-08-21T14:53:19.953Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-08-21T14:53:21.354Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-08-21T14:53:21.464Z [debug]: Contenido del carrito del usuario:
+2024-08-21T14:53:24.536Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-08-21T14:53:24.790Z [debug]: Actualizando stock para el producto ID:
+2024-08-21T14:53:24.894Z [debug]: Actualizando stock para el producto ID:
+2024-08-21T14:53:24.894Z [info]: Stock actualizado para todos los productos.
+2024-08-21T14:53:24.997Z [info]: Ticket creado:
+2024-08-21T14:53:27.581Z [info]: Correo electrónico enviado:
+2024-08-21T16:37:18.494Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-08-21T16:37:18.552Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-08-21T16:37:18.553Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-08-21T16:53:26.563Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-08-21T16:53:26.615Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-08-21T16:53:26.615Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-08-21T16:56:04.379Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-08-21T16:56:04.425Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-08-21T16:56:04.425Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
