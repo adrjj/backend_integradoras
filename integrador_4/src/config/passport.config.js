@@ -46,34 +46,6 @@ const initializePassport = () => {
     ))
 
 
-   /* passport.use('register', new localStrategy(
-        { passReqToCallback: true, usernameField: 'email' },
-        async (req, username, password, done) => {
-            console.log("2// passport", username, password)
-            // 2//  te@mail.com te
-            const { last_name, first_name, email, isAdmin } = req.body;
-            console.log("1// passport", req.query)
-            // 1// passport {}
-            try {
-                let user = await sessionModel.findOne({ email: username });
-                if (user) return done(null, false);
-                const newUser = new sessionModel({
-                    first_name,
-                    last_name,
-                    email,
-                    password: createHash(password),
-                    isAdmin
-                });
-                let result = await newUser.save();
-
-                return done(null, result);
-
-            } catch (error) {
-                return done("error al obtener al usuario", error);
-            }
-        })
-    )*/
-
         passport.use('register', new localStrategy(
             { passReqToCallback: true, usernameField: 'email' },
             async (req, username, password, done) => {
@@ -136,6 +108,7 @@ const initializePassport = () => {
                 return done(null, user)
             }
             if (!isValidPassword(user, password))
+                
                 return done(null, false)
             return done(null, user)
         } catch (error) {

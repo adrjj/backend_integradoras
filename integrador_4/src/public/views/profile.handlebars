@@ -1,5 +1,11 @@
 <h1>Perfil de Usuario</h1>
 
+  {{#if message}}
+    <div class="alert alert-info">
+      {{message}}
+    </div>
+  {{/if}}
+
 <ul class="contTotalCard">
 
     <article class="contCard">
@@ -7,10 +13,19 @@
 
         <h3>{{user.last_name}}</h3>
         <p>{{user.email}}</p>
+        <p>{{uer.role}}</p>
         <form action="/api/sessions/logout" method="POST">
             <button class="boton" type="submit">Cerrar Session</button>
         </form>
-    <a href="/api/carts"> <button>Mi carritto</button></a>
+        <a href="/api/carts"> <button>Mi carritto</button></a>
+        <a href="/api/sessions/uploadDocuments"> <button>Obtener rol Admin</button></a>
+        
+
+        {{#ifCond user.role '==' 'admin'}}
+        <a href="/realTimeProducts"><button>CRUD Productos</button></a>
+        {{/ifCond}}
+
+
     </article>
 
 </ul>

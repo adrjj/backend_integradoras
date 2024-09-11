@@ -5,6 +5,7 @@ const CustomError = require('../services/custom.Error');
 const {generateProductErrorInfo} = require('../services/info'); 
 const EErrors = require('../services/enum.js'); 
 
+const logger = require('../utils/logger.js');
 const ProductRepository = new Repositorie ()
 
 

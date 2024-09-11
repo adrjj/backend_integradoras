@@ -36,11 +36,25 @@ const hbs = exphbs.create({
     helpers: {
         json: function (context) {
             return JSON.stringify(context, null, 2);
+        },
+        ifCond: function (v1, operator, v2, options) {
+            switch (operator) {
+                case '==':
+                    return (v1 == v2) ? options.fn(this) : options.inverse(this);
+                case '===':
+                    return (v1 === v2) ? options.fn(this) : options.inverse(this);
+                default:
+                    return options.inverse(this);
+            }
         }
     },
-    
+
 });
 app.engine("handlebars", hbs.engine);
+
+
+
+
 app.set('views', path.join(__dirname, './public/views'));
 console.log("esta es la ubicaccion", __dirname)
 app.set("view engine", "handlebars");
@@ -49,7 +63,7 @@ app.set("view engine", "handlebars");
 const productRouter = require('./router/products.router.js');
 const cartRouter = require("./router/carts.router.js");
 const sessionRouter = require("./router/session.router.js")
-const mockingRouter = require ("./router/mocking.router.js")
+const mockingRouter = require("./router/mocking.router.js")
 
 //coneccion con connect-mongo
 app.use(session({
@@ -57,7 +71,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     store: mongoStore.create({ mongoUrl: process.env.CONECCCION })
-    
+
 }));
 
 initializePassport();
@@ -89,8 +103,8 @@ app.use("/", viewRouter)
 app.use("/api/products", productRouter);
 app.use("/api/carts", cartRouter);
 app.use("/api/sessions", sessionRouter);
-app.use("/mockingproducts",mockingRouter)
-app.use("/loggerTest",loggerRouter)
+app.use("/mockingproducts", mockingRouter)
+app.use("/loggerTest", loggerRouter)
 
 app.use(errorHandler) //manipulador de errores
 

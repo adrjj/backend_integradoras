@@ -7,7 +7,7 @@ const passport = require("passport");
 const generateResetToken = require("../utils/generateResetToken.js");
 const token = generateResetToken();
 
-const sendResetEmail =require("../utils/sendResetEmail.js")
+const sendResetEmail = require("../utils/sendResetEmail.js")
 
 const CustomError = require("../services/custom.Error")
 const EErrors = require("../services/enum.js")
@@ -16,7 +16,8 @@ const generateUserErrorInfo = require("../services/info.js")
 const isAuthenticated = authenticatedMiddleware.isAuthenticated;
 const isNotAuthenticated = authenticatedMiddleware.isNotAuthenticated;
 
-
+const upload = require("../middleware/multerConfig")
+const UserController=require("../dao/userDao")
 
 router.get("/github", passport.authenticate("github", { scope: "user.email" }), async (req, res) => { })
 
@@ -34,11 +35,50 @@ router.get("/login", isNotAuthenticated, (req, res) => {
 });
 
 router.get("/profile", isAuthenticated, (req, res) => {
-  res.render("profile", { user: req.session.user }); // Renderiza la vista de registro
-  console.log("2// session.router", req.session.user)
+  // Extrae el mensaje de los parámetros de consulta
+  const message = req.query.message || '';
+
+  // Renderiza la vista del perfil con el usuario y el mensaje
+  res.render("profile", { user: req.session.user, message });
 });
 
+//vista para caragar archvos
+router.get ("/uploadDocuments",isAuthenticated,(re,res)=>{
+  res.render("uploadDocuments")
+})
+// subir archvos
 
+
+// Configura qué archivos esperas y qué nombres tienen en el formulario
+const uploadFields = upload.fields([
+  { name: 'identificacion', maxCount: 1 },
+  { name: 'comprobante_domicilio', maxCount: 1 }
+ 
+]);
+
+// Endpoint para subir documentos
+router.post('/documents', uploadFields, async (req, res) => {
+  try {
+    const userId = req.user._id;
+    const files = req.files;
+    console.log (userId)
+
+    // Verifica que todos los documentos requeridos hayan sido cargados
+    if (!files.identificacion || !files.comprobante_domicilio) {
+      return res.status(400).send('Faltan documentos. Por favor, suba todos los documentos requeridos.');
+    }
+
+    // Si se han subido los documentos requeridos, realiza la lógica de actualización
+    if (files.identificacion && files.comprobante_domicilio) {
+      // Aquí actualizarías al usuario, por ejemplo
+      await UserController.updateUserStatus(userId, 'admin');
+    
+      res.redirect(`/api/sessions/profile?message=${encodeURIComponent('Documentos cargados y usuario actualizado a admin. Cierre sesión y vuelva a iniciar sesión para aplicar los cambios.')}`);
+    }
+  } catch (error) {
+    res.status(500).send('Error al subir documentos');
+  }
+});
 
 router.post("/register", passport.authenticate("register", { failureRedirect: "failRegister" }), async (req, res) => {
   //res.send({status:"sucess",message:"usuario regsitrado"})
@@ -80,7 +120,13 @@ router.post("/login", passport.authenticate("login", { failureRedirect: "faillog
     // Verificar si el usuario es un administrador
     if (req.user.role === "admin") {
       // Si es un administrador, redirigir a la página de productos en tiempo real para administradores
-      return res.redirect("/realtimeproducts");
+
+      // Actualizar la última conexión del usuario
+      req.user.last_connection = new Date();
+      await req.user.save();
+
+      return res.redirect("/products?welcome=1");
+
     } else {
       // Si no es un administrador, redirigir a la página de productos regulares
       return res.redirect("/products?welcome=1");
@@ -103,42 +149,47 @@ router.get("/reset-password", async (req, res) => {
 
 router.post("/logout", async (req, res) => {
 
-  req.session.destroy((err) => {
+  // Actualizar la última conexión del usuario
+  req.user.last_connection = new Date();
+  await req.user.save();
+ req.session.destroy((err) => {
 
-    if (err) return res.status(500).send("Error al cerrar session", error);
-    res.redirect("login");
+
+ if (err) return res.status(500).send("Error al cerrar session", error);
+ res.redirect("login");
 
 
-  })
+})
 
 });
 
+
 router.post('/forgot-password', async (req, res) => {
   const { email } = req.body;
-  console.log ("email",req.body)
+  console.log("email", req.body)
   try {
-      // Buscar al usuario en la base de datos por correo electrónico
-      const user = await sessionModel.findOne({ email });
+    // Buscar al usuario en la base de datos por correo electrónico
+    const user = await sessionModel.findOne({ email });
 
-      if (!user) {
-          return res.status(400).send('No se encontró una cuenta con ese correo electrónico.');
-      }
+    if (!user) {
+      return res.status(400).send('No se encontró una cuenta con ese correo electrónico.');
+    }
 
-      // Generar el token y la fecha de expiración
-      const usetoken = token;
-      const expirationTime = Date.now() + 3600000; // 1 hora
-      console.log("token", token)
-      // Guardar el token y la expiración en la base de datos
-      user.resetPasswordToken = usetoken;
-      user.resetPasswordExpires = expirationTime;
-      await user.save();
-  
-      // Enviar el correo de recuperación
-      await sendResetEmail(email, token);
+    // Generar el token y la fecha de expiración
+    const usetoken = token;
+    const expirationTime = Date.now() + 3600000; // 1 hora
+    console.log("token", token)
+    // Guardar el token y la expiración en la base de datos
+    user.resetPasswordToken = usetoken;
+    user.resetPasswordExpires = expirationTime;
+    await user.save();
 
-      res.status(200).send('Correo de recuperación enviado.');
+    // Enviar el correo de recuperación
+    await sendResetEmail(email, token);
+
+    res.status(200).send('Correo de recuperación enviado.');
   } catch (error) {
-      res.status(500).send('Error al enviar el correo de recuperación.');
+    res.status(500).send('Error al enviar el correo de recuperación.');
   }
 });
 
@@ -147,27 +198,27 @@ router.post('/reset-password/:token', async (req, res) => {
   const { newPassword } = req.body;
   console.log(token, newPassword)
   try {
-      // Verifica que el token sea válido y no haya expirado
-      const user = await sessionModel.findOne({ resetPasswordToken: token, resetPasswordExpires: { $gt: Date.now() } });
-      if (!user) {
-          return res.status(400).send('El token es inválido o ha expirado.');
-      }
-            // Cifra la nueva contraseña
-      newPasswordHash = createHash(newPassword)
+    // Verifica que el token sea válido y no haya expirado
+    const user = await sessionModel.findOne({ resetPasswordToken: token, resetPasswordExpires: { $gt: Date.now() } });
+    if (!user) {
+      return res.status(400).send('El token es inválido o ha expirado.');
+    }
+    // Cifra la nueva contraseña
+    newPasswordHash = createHash(newPassword)
 
-      user.password = newPasswordHash;
-      user.resetPasswordToken = undefined; // Elimina el token
-      user.resetPasswordExpires = undefined; // Elimina la expiración
-      await user.save();
+    user.password = newPasswordHash;
+    user.resetPasswordToken = undefined; // Elimina el token
+    user.resetPasswordExpires = undefined; // Elimina la expiración
+    await user.save();
 
-      //res.send('La contraseña ha sido actualizada con éxito.');
-      req.flash('success_msg', 'La contraseña ha sido cambiada con éxito.');
-      res.redirect("/api/sessions/login");
+    //res.send('La contraseña ha sido actualizada con éxito.');
+    req.flash('success_msg', 'La contraseña ha sido cambiada con éxito.');
+    res.redirect("/api/sessions/login");
 
   } catch (error) {
-      res.status(500).send('Hubo un error al restablecer la contraseña.');
+    res.status(500).send('Hubo un error al restablecer la contraseña.');
   }
-  
+
 });
 
 
@@ -176,9 +227,9 @@ router.get('/cambiarPassword', async (req, res) => {
 
   // Verificar si el token existe y es válido
   const user = await sessionModel.findOne({ resetPasswordToken: token, resetPasswordExpires: { $gt: Date.now() } });
-  
+
   if (!user) {
-      return res.status(400).send('El token es inválido o ha expirado.');
+    return res.status(400).send('El token es inválido o ha expirado.');
   }
 
   // Renderiza la vista del formulario de cambio de contraseña y pasa el token
