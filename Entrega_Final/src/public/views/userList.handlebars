@@ -1,0 +1,48 @@
+<h1>Lista de Usuarios</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Rol</th>
+      <th>ID</th>
+      <th>Acciones</th> <!-- Nueva columna de acciones -->
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+      <tr>
+        <td>{{first_name}} {{last_name}}</td>
+        <td>{{email}}</td>
+        <td>{{role}}</td>
+        <td>{{_id}}</td>
+        
+           <td>
+       
+              <!-- Select para cambiar el rol -->
+          <select id="roleSelect-{{_id}}">
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+            <option value="premium">Premium</option>
+          </select>
+        </td>
+        
+
+
+
+        <td>
+          <!-- Botón para modificar el rol -->
+          <button onclick="modifyRole('{{_id}}')">Modificar Rol</button>
+
+          <!-- Botón para eliminar el usuario -->
+          <button onclick="deleteUser('{{_id}}')">Eliminar</button>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<!-- Botón para eliminar todos los usuarios inactivos -->
+<button onclick="deleteInactiveUsers()">Eliminar Usuarios Inactivos</button>
+
+<script src="../js/logicaUser.js"> </script>

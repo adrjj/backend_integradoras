@@ -1,0 +1,19 @@
+<!-- views/uploadDocuments.handlebars -->
+<h1>Carga la documentacion</h1>
+
+<form action="/api/sessions/documents" method="POST" enctype="multipart/form-data">
+  <label for="identificacion">Identificación:</label>
+  <input type="file" name="identificacion" accept=".jpg, .png" required>
+  
+  <label for="comprobante_domicilio">Comprobante de domicilio:</label>
+  <input type="file" name="comprobante_domicilio" accept=".jpg, .png" required>
+  
+
+  
+  <button type="submit">Subir documentos</button>
+
+     
+
+  
+</form>
+<a href="/api/sessions/profile"> <button>Perfil</button>  </a>
