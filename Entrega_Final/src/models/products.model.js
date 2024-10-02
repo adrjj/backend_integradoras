@@ -12,7 +12,7 @@ const productsSchema = new mongoose.Schema({
     stock:{type: Number, required:true,  },
     status: {type: Boolean, default: true},
     category:{type: String, required:true, max:150 },
-    createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'user', required: true } 
+    createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'users', required: true } 
    
     
 

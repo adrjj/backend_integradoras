@@ -15,12 +15,20 @@ document.querySelectorAll('.BotonAgregar').forEach(button => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ productos,}),
+                body: JSON.stringify({ productos, }),
             });
-            console.log("//1",productos)
+            console.log("//1", productos)
             if (response.ok) {
                 console.log('Producto agregado al carrito correctamente.');
-                // Realizar acciones adicionales si es necesario, como actualizar la UI, etc.
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Producto agregado',
+                    text: 'El producto ha sido agregado a tu carrito.',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+
             } else {
                 console.error('Error al agregar el producto al carrito.');
             }
@@ -35,7 +43,7 @@ document.querySelectorAll('.BotonEliminar').forEach(button => {
     button.addEventListener('click', async (event) => {
         const productId = button.getAttribute('data-product-id'); // Obtener el ID del producto desde el atributo data
         const cartId = button.getAttribute('data-user-id'); // Obtener el ID del carrito desde el atributo data
-        console.log ("12// cartID",cartId,"productId",productId)
+        console.log("12// cartID", cartId, "productId", productId)
         if (!productId || !cartId) {
             console.error('Product ID or Cart ID is missing');
             return;
@@ -51,12 +59,29 @@ document.querySelectorAll('.BotonEliminar').forEach(button => {
 
             if (response.ok) {
                 console.log('Producto eliminado correctamente.');
-                // Realizar acciones adicionales si es necesario, como actualizar la UI, etc.
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Producto eliminado',
+                    text: 'El producto ha sido eliminado de tu carrito.',
+                    showConfirmButton: false,
+                    timer: 1500
+                }).then(() => {
+                    // Recargar la página después de mostrar el mensaje de éxito
+                    window.location.reload();
+                });
+            
+
             } else {
                 console.error('Error al eliminar el producto del carrito.');
             }
         } catch (error) {
             console.error('Error de red:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error de red',
+                text: 'Hubo un problema con la solicitud.',
+            });
         }
     });
 });

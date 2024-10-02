@@ -60,6 +60,15 @@ async loadProducts (){
     }
 }
 
+async getProdcutsAll (){
+    try{
+        return await this.dao.getProductsAll();
+    }
+    catch(error){
+        throw new Error (`Error al cargar el producto ${error.message}`)
+    }
+}
+
 async updateStock(productId, quantity) {
     
     try {

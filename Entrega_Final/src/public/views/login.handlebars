@@ -1,7 +1,7 @@
 <h1>Iniciar session</h1>
 
 {{#if success_msg}}
-    <p style="color: green;">{{success_msg}}</p>
+<p style="color: green;">{{success_msg}}</p>
 {{/if}}
 <div class="contTotal">
     <div class="contFormularioTotal">
@@ -13,9 +13,11 @@
                 <button class="boton" type="submit">Iniciar sesion</button>
             </form>
         </div>
-        <a href="register">Registrarse</a>
-       
-        <a href="reset-password">Olvide contraseña</a>
+        <div class="contElace">
+            <a href="register"> <button> Registrarse </button> </a>
+            <a href="reset-password"> <button> Olvide la contraseña </button> </a>
+            <a href="/products"> <button> Ver productos </button> </a>
+        </div>
     </div>
 
 </div>

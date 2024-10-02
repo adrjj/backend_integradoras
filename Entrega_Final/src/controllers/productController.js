@@ -114,16 +114,7 @@ class ProductController {
         }
     }
 
-    /* async deleteProduct(req, res) {
-         try {
-             const { id } = req.params;
-             await ProductRepository.deleteProduct(id);
-             res.status(200).json({ message: "Producto eliminado exitosamente." });
-         } catch (error) {
-             logger.error('Error al eliminar el producto:', error);
-             res.status(500).json({ error: "Error al eliminar el producto.", message: error.message });
-         }
-     }*/
+
 
     async deleteProduct(req, res) {
         try {
@@ -166,6 +157,29 @@ class ProductController {
             throw error;
         }
     }
+
+    
+    async getProdcutsAll(req, res) {
+        try {
+            const products = await ProductRepository.getProdcutsAll();
+    
+            // Verificar si se encontraron productos
+            if (!products || products.length === 0) {
+                return res.status(404).json({ error: "No se encontraron productos." });
+            }
+    
+            // Responder con los productos
+            return res.json({
+                status: 'success',
+                payload: products
+            });
+        } catch (error) {
+            // Manejar errores y enviar una respuesta adecuada
+            console.error("Error al cargar los productos:", error);
+            return res.status(500).json({ error: "Error al cargar los productos.", message: error.message });
+        }
+    }
+    
 
 }
 

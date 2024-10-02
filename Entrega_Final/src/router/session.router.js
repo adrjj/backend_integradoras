@@ -96,7 +96,7 @@ router.get("/failRegister", (req, res) => {
 
 
 
-router.post("/login", passport.authenticate("login", { failureRedirect: "faillogin" }), async (req, res, next) => {
+/*router.post("/login", passport.authenticate("login", { failureRedirect: "faillogin" }), async (req, res, next) => {
   // if (!req.user) return res.status(400).send({ status: "error", error: "datos incompletos" })
   if (!req.user) {
     CustomError.createError({
@@ -124,6 +124,8 @@ router.post("/login", passport.authenticate("login", { failureRedirect: "faillog
       // Actualizar la última conexión del usuario
       req.user.last_connection = new Date();
       await req.user.save();
+      
+      req.session.welcomeMessage = `¡Bienvenido/a, <strong>${username}</strong>, a nuestra tienda en línea!`;
 
       return res.redirect("/products?welcome=1");
 
@@ -134,7 +136,48 @@ router.post("/login", passport.authenticate("login", { failureRedirect: "faillog
   } catch (error) {
     next(error); // Asegúrate de pasar el error al middleware de manejo de errores
   }
+});*/
+
+
+router.post("/login", passport.authenticate("login", { failureRedirect: "faillogin" }), async (req, res, next) => {
+  if (!req.user) {
+    return CustomError.createError({
+      name: "LoginError",
+      cause: generateUserErrorInfo(req.body),
+      message: "Datos incompletos",
+      code: EErrors.INVALID_TYPES_ERROR
+    });
+  }
+
+  try {
+    // Almacena la información del usuario en la sesión
+    req.session.user = {
+      first_name: req.user.first_name,
+      last_name: req.user.last_name,
+      email: req.user.email,
+      role: req.user.role,
+    };
+
+    const username = req.user.first_name || req.user.email;
+
+    // Actualiza la última conexión del usuario
+    req.user.last_connection = new Date();
+    await req.user.save();
+
+    // Establece el mensaje de bienvenida en la sesión
+    req.session.welcomeMessage = `¡Bienvenido/a, <strong>${username}</strong>, a nuestra tienda en línea!`;
+
+    // Redirige a la página correspondiente según el rol del usuario
+    if (req.user.role === "admin") {
+      return res.redirect("/products?welcome=1");
+    } else {
+      return res.redirect("/products?welcome=1");
+    }
+  } catch (error) {
+    next(error); // Manejo de errores
+  }
 });
+
 
 router.get("/faillogin", async (req, res) => {
   console.log("login fallido")
@@ -153,6 +196,8 @@ router.post("/logout", async (req, res) => {
   req.user.last_connection = new Date();
   await req.user.save();
  req.session.destroy((err) => {
+
+
 
 
  if (err) return res.status(500).send("Error al cerrar session", error);

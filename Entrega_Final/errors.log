@@ -243,3 +243,733 @@
 2024-09-17T17:59:56.908Z [debug]: Filter Query:
 2024-09-17T17:59:56.910Z [debug]: Sort Query:
 2024-09-17T17:59:56.910Z [debug]: Limit:
+2024-09-25T21:17:49.355Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-09-25T21:17:49.458Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-09-25T21:17:49.459Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-09-25T21:20:50.598Z [debug]: Filter Query:
+2024-09-25T21:20:50.598Z [debug]: Sort Query:
+2024-09-25T21:20:50.599Z [debug]: Limit:
+2024-09-25T21:38:02.033Z [debug]: Filter Query:
+2024-09-25T21:38:02.034Z [debug]: Sort Query:
+2024-09-25T21:38:02.034Z [debug]: Limit:
+2024-09-25T22:09:16.332Z [debug]: Filter Query:
+2024-09-25T22:09:16.332Z [debug]: Sort Query:
+2024-09-25T22:09:16.332Z [debug]: Limit:
+2024-09-25T23:10:37.070Z [debug]: Filter Query:
+2024-09-25T23:10:37.070Z [debug]: Sort Query:
+2024-09-25T23:10:37.071Z [debug]: Limit:
+2024-09-26T00:11:36.316Z [debug]: Filter Query:
+2024-09-26T00:11:36.317Z [debug]: Sort Query:
+2024-09-26T00:11:36.317Z [debug]: Limit:
+2024-09-30T22:04:14.925Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-09-30T22:04:14.978Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-09-30T22:04:14.978Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-09-30T22:04:55.363Z [debug]: Filter Query:
+2024-09-30T22:04:55.364Z [debug]: Sort Query:
+2024-09-30T22:04:55.364Z [debug]: Limit:
+2024-09-30T22:13:43.238Z [debug]: Filter Query:
+2024-09-30T22:13:43.240Z [debug]: Sort Query:
+2024-09-30T22:13:43.240Z [debug]: Limit:
+2024-09-30T22:23:21.999Z [debug]: Filter Query:
+2024-09-30T22:23:22.000Z [debug]: Sort Query:
+2024-09-30T22:23:22.001Z [debug]: Limit:
+2024-09-30T22:33:03.916Z [debug]: Filter Query:
+2024-09-30T22:33:03.918Z [debug]: Sort Query:
+2024-09-30T22:33:03.919Z [debug]: Limit:
+2024-09-30T22:37:57.272Z [debug]: Filter Query:
+2024-09-30T22:37:57.272Z [debug]: Sort Query:
+2024-09-30T22:37:57.273Z [debug]: Limit:
+2024-09-30T22:38:09.882Z [debug]: Filter Query:
+2024-09-30T22:38:09.883Z [debug]: Sort Query:
+2024-09-30T22:38:09.883Z [debug]: Limit:
+2024-09-30T22:38:22.870Z [debug]: Filter Query:
+2024-09-30T22:38:22.871Z [debug]: Sort Query:
+2024-09-30T22:38:22.871Z [debug]: Limit:
+2024-09-30T22:38:30.378Z [debug]: Filter Query:
+2024-09-30T22:38:30.378Z [debug]: Sort Query:
+2024-09-30T22:38:30.379Z [debug]: Limit:
+2024-09-30T22:38:41.056Z [debug]: Filter Query:
+2024-09-30T22:38:41.057Z [debug]: Sort Query:
+2024-09-30T22:38:41.057Z [debug]: Limit:
+2024-09-30T22:39:15.677Z [debug]: Filter Query:
+2024-09-30T22:39:15.678Z [debug]: Sort Query:
+2024-09-30T22:39:15.678Z [debug]: Limit:
+2024-09-30T22:39:27.286Z [debug]: Filter Query:
+2024-09-30T22:39:27.287Z [debug]: Sort Query:
+2024-09-30T22:39:27.287Z [debug]: Limit:
+2024-09-30T22:40:44.451Z [debug]: Filter Query:
+2024-09-30T22:40:44.452Z [debug]: Sort Query:
+2024-09-30T22:40:44.452Z [debug]: Limit:
+2024-09-30T22:41:03.187Z [debug]: Filter Query:
+2024-09-30T22:41:03.187Z [debug]: Sort Query:
+2024-09-30T22:41:03.188Z [debug]: Limit:
+2024-09-30T22:42:34.300Z [debug]: Filter Query:
+2024-09-30T22:42:34.300Z [debug]: Sort Query:
+2024-09-30T22:42:34.301Z [debug]: Limit:
+2024-09-30T22:42:46.383Z [debug]: Filter Query:
+2024-09-30T22:42:46.384Z [debug]: Sort Query:
+2024-09-30T22:42:46.384Z [debug]: Limit:
+2024-09-30T23:01:08.008Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:02:04.318Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:03:20.503Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:03:23.746Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:04:19.605Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:08:45.714Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:08:47.082Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:09:40.603Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:14:14.362Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:14:22.363Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:17:25.798Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:17:28.235Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:17:51.223Z [error]: Error al recuperar el producto: Error al cargar el producto especifico Error al obtener el producto: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "products"
+2024-09-30T23:20:10.748Z [error]: Error al cargar los productos: Error al cargar el producto Cannot read properties of undefined (reading 'status')
+2024-09-30T23:21:42.688Z [error]: Error al cargar los productos: Error al cargar el producto Cannot read properties of undefined (reading 'status')
+2024-10-01T17:53:16.077Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T17:53:16.128Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T17:53:16.128Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-01T17:53:23.190Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T17:53:23.242Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T17:53:23.242Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-01T17:54:40.310Z [debug]: Creando carrito
+2024-10-01T17:54:40.421Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T17:54:41.333Z [debug]: Creando carrito
+2024-10-01T17:54:41.439Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T17:54:42.633Z [debug]: Creando carrito
+2024-10-01T17:54:42.734Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T17:54:43.534Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T17:54:43.666Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T17:54:43.667Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T18:04:56.913Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T18:04:56.958Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T18:04:56.958Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-01T18:05:00.451Z [debug]: Creando carrito
+2024-10-01T18:05:00.550Z [info]: Carrito creado exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-01T18:05:01.412Z [debug]: Creando carrito
+2024-10-01T18:05:01.525Z [info]: Carrito creado exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-01T18:05:04.185Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T18:05:04.277Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T18:05:04.277Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-01T18:05:06.273Z [debug]: Iniciando la eliminación del producto con ID: 66494e75d229ae807fe4ee10 del carrito con ID: 66dcd945f6a92d15564f00f6
+2024-10-01T18:05:06.378Z [info]: Producto con ID: 66494e75d229ae807fe4ee10 eliminado del carrito con ID: 66dcd945f6a92d15564f00f6 exitosamente
+2024-10-01T18:05:08.513Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66dcd945f6a92d15564f00f6
+2024-10-01T18:05:08.674Z [info]: Producto con ID: 664e2577d1631423b90cc99e eliminado del carrito con ID: 66dcd945f6a92d15564f00f6 exitosamente
+2024-10-01T18:05:09.697Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T18:05:09.766Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T18:05:09.767Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-01T18:05:17.266Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T18:05:17.332Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T18:05:17.332Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-01T18:05:22.639Z [debug]: Creando carrito
+2024-10-01T18:05:22.758Z [info]: Carrito creado exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-01T19:22:45.110Z [debug]: Creando carrito
+2024-10-01T19:22:45.213Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:22:48.851Z [debug]: Creando carrito
+2024-10-01T19:22:48.962Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:22:56.218Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:22:56.308Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:22:56.308Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:22:57.800Z [debug]: Iniciando la eliminación del producto con ID: 664e2591d1631423b90ce959 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:22:57.914Z [info]: Producto con ID: 664e2591d1631423b90ce959 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:23:38.404Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:23:38.500Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:23:38.500Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:23:40.016Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:23:40.112Z [info]: Producto con ID: 664e2577d1631423b90cc99e eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:23:41.987Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:24:15.643Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:24:16.076Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:24:16.076Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:24:19.440Z [debug]: Iniciando la eliminación del producto con ID: 66494e75d229ae807fe4ee10 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:24:19.555Z [info]: Producto con ID: 66494e75d229ae807fe4ee10 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:24:42.871Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:24:42.925Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:24:42.925Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:24:46.217Z [debug]: Creando carrito
+2024-10-01T19:24:46.330Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:24:49.088Z [debug]: Creando carrito
+2024-10-01T19:24:49.186Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:24:51.392Z [debug]: Creando carrito
+2024-10-01T19:24:51.490Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:24:55.759Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:24:55.862Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:24:55.863Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:06.536Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:26:06.635Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:26:06.635Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:08.626Z [debug]: Iniciando la eliminación del producto con ID: 66494e75d229ae807fe4ee10 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:08.738Z [info]: Producto con ID: 66494e75d229ae807fe4ee10 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:26:10.958Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:26:11.081Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:26:11.081Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:12.619Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:12.746Z [info]: Producto con ID: 664e2577d1631423b90cc99e eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:26:13.766Z [debug]: Iniciando la eliminación del producto con ID: 664e2591d1631423b90ce959 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:13.885Z [info]: Producto con ID: 664e2591d1631423b90ce959 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:26:15.415Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:26:15.472Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:26:15.473Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:19.018Z [debug]: Creando carrito
+2024-10-01T19:26:19.127Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:21.426Z [debug]: Creando carrito
+2024-10-01T19:26:21.527Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:24.050Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:26:24.146Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:26:24.146Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:56.709Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:26:56.811Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:26:56.811Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:58.670Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:26:58.793Z [info]: Producto con ID: 664e2577d1631423b90cc99e eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:27:01.191Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:27:01.279Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:27:01.279Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:27:05.595Z [debug]: Creando carrito
+2024-10-01T19:27:05.694Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:27:10.334Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:27:10.438Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:27:10.438Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:27:11.887Z [debug]: Iniciando la eliminación del producto con ID: 664e2591d1631423b90ce959 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:27:11.992Z [info]: Producto con ID: 664e2591d1631423b90ce959 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:27:13.861Z [debug]: Iniciando la eliminación del producto con ID: 66494e75d229ae807fe4ee10 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:27:13.963Z [info]: Producto con ID: 66494e75d229ae807fe4ee10 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:27:15.260Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:27:15.306Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:27:15.306Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:28:01.894Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:28:01.949Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:28:01.949Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:28:06.297Z [debug]: Creando carrito
+2024-10-01T19:28:06.403Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:28:08.611Z [debug]: Creando carrito
+2024-10-01T19:28:08.704Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:28:10.735Z [debug]: Creando carrito
+2024-10-01T19:28:10.847Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:28:14.167Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:28:14.263Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:28:14.263Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:28:15.757Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:28:15.864Z [info]: Producto con ID: 664e2577d1631423b90cc99e eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:28:18.204Z [debug]: Iniciando la eliminación del producto con ID: 66494e75d229ae807fe4ee10 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:28:18.310Z [info]: Producto con ID: 66494e75d229ae807fe4ee10 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:28:20.608Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:28:20.701Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:28:20.701Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:06.190Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:30:06.283Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:30:06.283Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:07.419Z [debug]: Iniciando la eliminación del producto con ID: 664e2591d1631423b90ce959 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:07.519Z [info]: Producto con ID: 664e2591d1631423b90ce959 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:30:09.139Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:30:09.184Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:30:09.184Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:12.523Z [debug]: Creando carrito
+2024-10-01T19:30:12.664Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:14.957Z [debug]: Creando carrito
+2024-10-01T19:30:15.624Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:17.791Z [debug]: Creando carrito
+2024-10-01T19:30:17.889Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:22.313Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:30:22.407Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:30:22.407Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:23.968Z [debug]: Iniciando la eliminación del producto con ID: 66494e75d229ae807fe4ee10 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:24.073Z [info]: Producto con ID: 66494e75d229ae807fe4ee10 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:30:25.704Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:30:25.833Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:30:25.833Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:27.328Z [debug]: Iniciando la eliminación del producto con ID: 664e2591d1631423b90ce959 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:27.439Z [info]: Producto con ID: 664e2591d1631423b90ce959 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:30:29.071Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:30:29.159Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:30:29.159Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:30.257Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:30.367Z [info]: Producto con ID: 664e2577d1631423b90cc99e eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T19:30:31.990Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:30:32.061Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:30:32.061Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T19:30:50.124Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T19:30:50.171Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T19:30:50.171Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:40:19.139Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:40:19.190Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:40:19.190Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:42:53.702Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:42:53.749Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:42:53.750Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:43:13.675Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:43:13.720Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:43:13.720Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:43:25.517Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:43:25.575Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:43:25.575Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:43:29.626Z [debug]: Creando carrito
+2024-10-01T21:43:29.768Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:43:34.437Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:43:34.531Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:43:34.532Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:43:41.544Z [debug]: Iniciando la eliminación del producto con ID: 664e2591d1631423b90ce959 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T21:43:41.695Z [info]: Producto con ID: 664e2591d1631423b90ce959 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T21:43:43.335Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:43:43.385Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:43:43.385Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:44:23.722Z [debug]: Creando carrito
+2024-10-01T21:44:23.832Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:44:26.289Z [debug]: Creando carrito
+2024-10-01T21:44:26.391Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:44:30.117Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:44:30.210Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:44:30.210Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:44:55.900Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:44:55.991Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:44:55.992Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:45:18.689Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:45:18.806Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:45:18.807Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:45:22.131Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T21:45:22.256Z [info]: Producto con ID: 664e2577d1631423b90cc99e eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T21:45:23.882Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:45:23.985Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:45:23.985Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:45:25.729Z [debug]: Iniciando la eliminación del producto con ID: 664e25b4d1631423b90d0d3a del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T21:45:25.836Z [info]: Producto con ID: 664e25b4d1631423b90d0d3a eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T21:45:27.463Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:45:27.508Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:45:27.509Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:47:08.742Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:47:08.797Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:47:08.798Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:47:12.709Z [debug]: Creando carrito
+2024-10-01T21:47:12.832Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:47:16.058Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:47:16.156Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:47:16.157Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:47:18.217Z [debug]: Iniciando la eliminación del producto con ID: 664e2591d1631423b90ce959 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T21:47:18.320Z [info]: Producto con ID: 664e2591d1631423b90ce959 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T21:47:19.931Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:47:19.979Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:47:19.979Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:06.589Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:48:06.638Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:48:06.638Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:17.469Z [debug]: Creando carrito
+2024-10-01T21:48:17.686Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:19.807Z [debug]: Creando carrito
+2024-10-01T21:48:19.934Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:22.596Z [debug]: Creando carrito
+2024-10-01T21:48:22.818Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:26.924Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:48:27.108Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:48:27.108Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:36.231Z [debug]: Iniciando la eliminación del producto con ID: 664e2591d1631423b90ce959 del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:36.333Z [info]: Producto con ID: 664e2591d1631423b90ce959 eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T21:48:37.952Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:48:38.045Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:48:38.045Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:39.619Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:39.750Z [info]: Producto con ID: 664e2577d1631423b90cc99e eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T21:48:41.362Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:48:41.455Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:48:41.455Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:43.223Z [debug]: Iniciando la eliminación del producto con ID: 664e25b4d1631423b90d0d3a del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T21:48:43.323Z [info]: Producto con ID: 664e25b4d1631423b90d0d3a eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T21:48:44.940Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:48:44.988Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:48:44.988Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:49:49.276Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:49:49.326Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:49:49.326Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:50:06.601Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:50:06.656Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:50:06.656Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:50:09.693Z [debug]: Creando carrito
+2024-10-01T21:50:09.811Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:50:13.457Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:50:13.602Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:50:13.602Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:50:15.363Z [debug]: Iniciando la eliminación del producto con ID: 664e2577d1631423b90cc99e del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T21:50:15.465Z [info]: Producto con ID: 664e2577d1631423b90cc99e eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T21:50:21.580Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:50:21.708Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:50:21.708Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:51:05.278Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:51:05.336Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:51:05.337Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:51:09.481Z [debug]: Creando carrito
+2024-10-01T21:51:09.590Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:51:14.205Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:51:14.297Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:51:14.297Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:51:16.057Z [debug]: Iniciando la eliminación del producto con ID: 664e25b4d1631423b90d0d3a del carrito con ID: 66fc374f466ba13e113dfc99
+2024-10-01T21:51:16.160Z [info]: Producto con ID: 664e25b4d1631423b90d0d3a eliminado del carrito con ID: 66fc374f466ba13e113dfc99 exitosamente
+2024-10-01T21:51:17.778Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:51:17.823Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:51:17.823Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:51:25.541Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:51:25.588Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:51:25.588Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:52:18.910Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:52:18.959Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:52:18.959Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:52:58.708Z [debug]: Filter Query:
+2024-10-01T21:52:58.709Z [debug]: Sort Query:
+2024-10-01T21:52:58.709Z [debug]: Limit:
+2024-10-01T21:54:05.598Z [debug]: Creando carrito
+2024-10-01T21:54:05.700Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:54:09.679Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:54:09.773Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:54:09.774Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:54:13.130Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T21:54:13.250Z [debug]: Contenido del carrito del usuario:
+2024-10-01T21:54:28.296Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:54:28.398Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:54:28.398Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:54:33.712Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T21:54:33.804Z [debug]: Contenido del carrito del usuario:
+2024-10-01T21:54:53.690Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T21:54:53.783Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T21:54:53.783Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T21:54:56.375Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T21:54:56.470Z [debug]: Contenido del carrito del usuario:
+2024-10-01T21:57:33.393Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T21:57:33.508Z [debug]: Contenido del carrito del usuario:
+2024-10-01T21:57:37.755Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-01T21:57:38.118Z [debug]: Actualizando stock para el producto ID:
+2024-10-01T21:57:38.119Z [info]: Stock actualizado para todos los productos.
+2024-10-01T21:57:38.199Z [info]: Ticket creado:
+2024-10-01T21:57:40.927Z [info]: Correo electrónico enviado:
+2024-10-01T22:10:08.516Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-01T22:10:08.566Z [info]: Stock actualizado para todos los productos.
+2024-10-01T22:10:08.619Z [info]: Ticket creado:
+2024-10-01T22:10:11.587Z [info]: Correo electrónico enviado:
+2024-10-01T22:10:29.917Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:10:29.974Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:10:29.975Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:10:33.519Z [debug]: Creando carrito
+2024-10-01T22:10:33.629Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:10:37.206Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:10:37.298Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:10:37.298Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:10:39.564Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T22:10:39.655Z [debug]: Contenido del carrito del usuario:
+2024-10-01T22:10:42.283Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-01T22:10:42.476Z [debug]: Actualizando stock para el producto ID:
+2024-10-01T22:10:42.477Z [info]: Stock actualizado para todos los productos.
+2024-10-01T22:10:42.529Z [info]: Ticket creado:
+2024-10-01T22:10:45.163Z [info]: Correo electrónico enviado:
+2024-10-01T22:12:00.857Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-01T22:12:00.905Z [info]: Stock actualizado para todos los productos.
+2024-10-01T22:12:00.958Z [info]: Ticket creado:
+2024-10-01T22:12:03.313Z [info]: Correo electrónico enviado:
+2024-10-01T22:12:03.886Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-01T22:12:03.934Z [info]: Stock actualizado para todos los productos.
+2024-10-01T22:12:03.984Z [info]: Ticket creado:
+2024-10-01T22:12:06.003Z [info]: Correo electrónico enviado:
+2024-10-01T22:12:11.038Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:12:11.083Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:12:11.084Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:12:14.586Z [debug]: Creando carrito
+2024-10-01T22:12:14.692Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:12:19.396Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:12:19.497Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:12:19.497Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:12:25.433Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T22:12:25.529Z [debug]: Contenido del carrito del usuario:
+2024-10-01T22:12:54.325Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T22:12:54.414Z [debug]: Contenido del carrito del usuario:
+2024-10-01T22:12:55.361Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T22:12:55.474Z [debug]: Contenido del carrito del usuario:
+2024-10-01T22:12:59.214Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-01T22:12:59.409Z [debug]: Actualizando stock para el producto ID:
+2024-10-01T22:12:59.409Z [info]: Stock actualizado para todos los productos.
+2024-10-01T22:12:59.459Z [info]: Ticket creado:
+2024-10-01T22:13:01.513Z [info]: Correo electrónico enviado:
+2024-10-01T22:13:28.238Z [debug]: Creando carrito
+2024-10-01T22:13:28.353Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:13:33.202Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:13:33.305Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:13:33.306Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:13:35.365Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T22:13:35.463Z [debug]: Contenido del carrito del usuario:
+2024-10-01T22:13:38.593Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-01T22:13:38.785Z [debug]: Actualizando stock para el producto ID:
+2024-10-01T22:13:38.785Z [info]: Stock actualizado para todos los productos.
+2024-10-01T22:13:38.839Z [info]: Ticket creado:
+2024-10-01T22:13:40.825Z [info]: Correo electrónico enviado:
+2024-10-01T22:16:16.645Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:16:16.699Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:16:16.700Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:16:22.657Z [debug]: Creando carrito
+2024-10-01T22:16:22.771Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:16:28.272Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:16:28.365Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:16:28.365Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:16:30.353Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T22:16:30.448Z [debug]: Contenido del carrito del usuario:
+2024-10-01T22:16:35.036Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-01T22:16:35.227Z [debug]: Actualizando stock para el producto ID:
+2024-10-01T22:16:35.228Z [info]: Stock actualizado para todos los productos.
+2024-10-01T22:16:35.281Z [info]: Ticket creado:
+2024-10-01T22:16:38.071Z [info]: Correo electrónico enviado:
+2024-10-01T22:20:04.796Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:20:04.853Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:20:04.853Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:23:05.882Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:23:05.937Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:23:05.937Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:23:25.569Z [debug]: Creando carrito
+2024-10-01T22:23:25.702Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:23:28.492Z [debug]: Creando carrito
+2024-10-01T22:23:28.594Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:23:31.960Z [debug]: Creando carrito
+2024-10-01T22:23:32.100Z [info]: Carrito creado exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:23:36.725Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-01T22:23:36.827Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-01T22:23:36.828Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66fc374f466ba13e113dfc99
+2024-10-01T22:23:43.433Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-01T22:23:43.529Z [debug]: Contenido del carrito del usuario:
+2024-10-01T22:23:50.137Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-01T22:23:50.330Z [debug]: Actualizando stock para el producto ID:
+2024-10-01T22:23:50.432Z [debug]: Actualizando stock para el producto ID:
+2024-10-01T22:23:50.536Z [debug]: Actualizando stock para el producto ID:
+2024-10-01T22:23:50.537Z [info]: Stock actualizado para todos los productos.
+2024-10-01T22:23:50.596Z [info]: Ticket creado:
+2024-10-01T22:23:53.681Z [info]: Correo electrónico enviado:
+2024-10-02T13:13:07.942Z [error]: Error al obtener los productos del carrito: Cannot read properties of undefined (reading 'id')
+2024-10-02T13:13:23.475Z [error]: Error al obtener los productos del carrito: Cannot read properties of undefined (reading 'id')
+2024-10-02T13:13:29.945Z [error]: Error al obtener los productos del carrito: Cannot read properties of undefined (reading 'id')
+2024-10-02T13:13:35.393Z [error]: Error al obtener los productos del carrito: Cannot read properties of undefined (reading 'id')
+2024-10-02T13:28:32.763Z [debug]: Creando carrito
+2024-10-02T13:28:32.872Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:28:34.971Z [debug]: Creando carrito
+2024-10-02T13:28:35.065Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:28:39.692Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T13:28:39.789Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T13:28:39.789Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:28:48.203Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T13:28:48.305Z [debug]: Contenido del carrito del usuario:
+2024-10-02T13:28:52.034Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T13:28:52.230Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T13:28:52.325Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T13:28:52.419Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T13:28:52.419Z [info]: Stock actualizado para todos los productos.
+2024-10-02T13:28:52.485Z [info]: Ticket creado:
+2024-10-02T13:28:56.015Z [info]: Correo electrónico enviado:
+2024-10-02T13:32:32.005Z [error]: Error al obtener los productos del carrito: Cannot read properties of undefined (reading 'id')
+2024-10-02T13:32:39.662Z [error]: Error al obtener los productos del carrito: Cannot read properties of undefined (reading 'id')
+2024-10-02T13:33:30.696Z [error]: Error al obtener los productos del carrito: Cannot read properties of undefined (reading 'id')
+2024-10-02T13:35:23.080Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T13:35:23.135Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T13:35:23.135Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:35:28.705Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T13:35:28.750Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T13:35:28.750Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:38:29.615Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T13:38:29.672Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T13:38:29.672Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:49:27.118Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T13:49:27.175Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T13:49:27.176Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:49:32.354Z [debug]: Creando carrito
+2024-10-02T13:49:32.465Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:49:38.428Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T13:49:38.525Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T13:49:38.525Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:49:44.922Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T13:49:45.018Z [debug]: Contenido del carrito del usuario:
+2024-10-02T13:54:01.375Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T13:54:01.512Z [debug]: Contenido del carrito del usuario:
+2024-10-02T13:54:20.120Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T13:54:20.224Z [debug]: Contenido del carrito del usuario:
+2024-10-02T13:54:23.970Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T13:54:24.068Z [debug]: Contenido del carrito del usuario:
+2024-10-02T13:54:41.136Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T13:54:41.321Z [debug]: Contenido del carrito del usuario:
+2024-10-02T13:56:39.064Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T13:56:39.167Z [debug]: Contenido del carrito del usuario:
+2024-10-02T13:56:50.285Z [debug]: Creando carrito
+2024-10-02T13:56:50.392Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:56:52.548Z [debug]: Creando carrito
+2024-10-02T13:56:52.652Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:56:56.900Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T13:56:56.992Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T13:56:56.993Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T13:57:03.661Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T13:57:03.754Z [debug]: Contenido del carrito del usuario:
+2024-10-02T13:57:21.295Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T13:57:21.388Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T13:57:21.388Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:28:21.351Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T14:28:21.460Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T14:28:21.460Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-02T14:40:00.908Z [debug]: Creando carrito
+2024-10-02T14:40:01.002Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:40:03.923Z [debug]: Creando carrito
+2024-10-02T14:40:04.025Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:40:06.263Z [debug]: Creando carrito
+2024-10-02T14:40:06.362Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:40:10.141Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T14:40:10.235Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T14:40:10.235Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:40:14.730Z [debug]: Iniciando la eliminación del producto con ID: 664e25b4d1631423b90d0d3a del carrito con ID: 66c39fe3cd0ee0090400c177
+2024-10-02T14:40:14.829Z [info]: Producto con ID: 664e25b4d1631423b90d0d3a eliminado del carrito con ID: 66c39fe3cd0ee0090400c177 exitosamente
+2024-10-02T14:40:16.441Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T14:40:16.538Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T14:40:16.539Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:40:19.206Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T14:40:19.296Z [debug]: Contenido del carrito del usuario:
+2024-10-02T14:40:27.151Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T14:40:27.340Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T14:40:27.435Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T14:40:27.436Z [info]: Stock actualizado para todos los productos.
+2024-10-02T14:40:27.494Z [info]: Ticket creado:
+2024-10-02T14:40:30.558Z [info]: Correo electrónico enviado:
+2024-10-02T14:40:48.677Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T14:40:48.726Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T14:40:48.726Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:46:04.284Z [debug]: Creando carrito
+2024-10-02T14:46:04.381Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:46:07.607Z [debug]: Creando carrito
+2024-10-02T14:46:07.702Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:46:10.675Z [debug]: Creando carrito
+2024-10-02T14:46:10.770Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:46:13.294Z [debug]: Creando carrito
+2024-10-02T14:46:13.424Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:46:19.380Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T14:46:19.468Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T14:46:19.469Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:46:26.635Z [debug]: Iniciando la eliminación del producto con ID: 664e267ed1631423b90ddf6c del carrito con ID: 66c39fe3cd0ee0090400c177
+2024-10-02T14:46:26.752Z [info]: Producto con ID: 664e267ed1631423b90ddf6c eliminado del carrito con ID: 66c39fe3cd0ee0090400c177 exitosamente
+2024-10-02T14:46:28.363Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T14:46:28.539Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T14:46:28.539Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:51:25.139Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T14:51:25.238Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T14:51:25.238Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T14:59:30.253Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T14:59:30.347Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T14:59:30.347Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T15:02:02.153Z [debug]: Creando carrito
+2024-10-02T15:02:02.252Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T15:02:04.832Z [debug]: Creando carrito
+2024-10-02T15:02:04.926Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T15:02:11.140Z [debug]: Creando carrito
+2024-10-02T15:02:11.236Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T15:02:21.305Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T15:02:21.405Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T15:02:21.406Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T15:02:32.730Z [debug]: Iniciando la eliminación del producto con ID: 664e26cfd1631423b90e326f del carrito con ID: 66c39fe3cd0ee0090400c177
+2024-10-02T15:02:32.831Z [info]: Producto con ID: 664e26cfd1631423b90e326f eliminado del carrito con ID: 66c39fe3cd0ee0090400c177 exitosamente
+2024-10-02T15:02:34.453Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T15:02:34.555Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T15:02:34.556Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T15:02:36.084Z [debug]: Iniciando la eliminación del producto con ID: 664e25b4d1631423b90d0d3a del carrito con ID: 66c39fe3cd0ee0090400c177
+2024-10-02T15:02:36.258Z [info]: Producto con ID: 664e25b4d1631423b90d0d3a eliminado del carrito con ID: 66c39fe3cd0ee0090400c177 exitosamente
+2024-10-02T15:02:37.875Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T15:02:37.966Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T15:02:37.967Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T15:02:41.379Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T15:02:41.471Z [debug]: Contenido del carrito del usuario:
+2024-10-02T15:02:46.360Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T15:02:46.565Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T15:02:46.659Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T15:02:46.783Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T15:02:46.783Z [info]: Stock actualizado para todos los productos.
+2024-10-02T15:02:46.838Z [info]: Ticket creado:
+2024-10-02T15:02:49.299Z [info]: Correo electrónico enviado:
+2024-10-02T15:03:01.600Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T15:03:01.648Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T15:03:01.648Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:30:09.954Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:30:10.000Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:30:10.000Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:30:15.540Z [debug]: Creando carrito
+2024-10-02T18:30:15.642Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:30:20.046Z [debug]: Creando carrito
+2024-10-02T18:30:20.150Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:30:43.820Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:30:43.910Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:30:43.910Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:30:49.205Z [debug]: Creando carrito
+2024-10-02T18:30:49.305Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:30:52.480Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:30:52.575Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:30:52.576Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:30:57.033Z [debug]: Creando carrito
+2024-10-02T18:30:57.129Z [info]: Carrito creado exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:31:01.765Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:31:01.875Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:31:01.876Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:31:18.312Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T18:31:18.417Z [debug]: Contenido del carrito del usuario:
+2024-10-02T18:31:56.018Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:31:56.232Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:31:56.287Z [error]: Error al confirmar la compra: Error en el repositorio al actualizar el stock: Error al actualizar el stock: Stock insuficiente
+2024-10-02T18:32:10.409Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:32:10.503Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:32:10.503Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:32:14.606Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T18:32:14.702Z [debug]: Contenido del carrito del usuario:
+2024-10-02T18:32:16.935Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:32:17.125Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:32:17.168Z [error]: Error al confirmar la compra: Error en el repositorio al actualizar el stock: Error al actualizar el stock: Stock insuficiente
+2024-10-02T18:32:40.306Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:32:40.396Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:32:40.397Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:32:43.124Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T18:32:43.214Z [debug]: Contenido del carrito del usuario:
+2024-10-02T18:32:51.337Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:32:51.534Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:32:51.580Z [error]: Error al confirmar la compra: Error en el repositorio al actualizar el stock: Error al actualizar el stock: Stock insuficiente
+2024-10-02T18:32:53.294Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:32:53.498Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:32:53.543Z [error]: Error al confirmar la compra: Error en el repositorio al actualizar el stock: Error al actualizar el stock: Stock insuficiente
+2024-10-02T18:33:08.172Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:33:08.265Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:33:08.265Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:33:34.413Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:33:34.519Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:33:34.520Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:33:48.075Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T18:33:48.168Z [debug]: Contenido del carrito del usuario:
+2024-10-02T18:33:51.507Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:33:51.716Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:33:51.760Z [error]: Error al confirmar la compra: Error en el repositorio al actualizar el stock: Error al actualizar el stock: Stock insuficiente
+2024-10-02T18:33:59.329Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:33:59.539Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:33:59.592Z [error]: Error al confirmar la compra: Error en el repositorio al actualizar el stock: Error al actualizar el stock: Stock insuficiente
+2024-10-02T18:35:07.897Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:35:08.099Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:35:08.145Z [error]: Error al confirmar la compra: Error en el repositorio al actualizar el stock: Error al actualizar el stock: Stock insuficiente
+2024-10-02T18:36:32.476Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:36:32.567Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:36:32.567Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-02T18:36:35.963Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T18:36:36.062Z [debug]: Contenido del carrito del usuario:
+2024-10-02T18:36:38.475Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:36:38.615Z [error]: Error al confirmar la compra: Error en el repositorio al actualizar el stock: Error al actualizar el stock: Stock insuficiente
+2024-10-02T18:39:00.590Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:39:00.759Z [error]: Error al confirmar la compra: Error en el repositorio al actualizar el stock: Error al actualizar el stock: Stock insuficiente
+2024-10-02T18:52:41.964Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:52:42.063Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:52:42.064Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66dcd945f6a92d15564f00f6
+2024-10-02T18:52:46.764Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T18:52:46.853Z [debug]: Contenido del carrito del usuario:
+2024-10-02T18:52:49.014Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:52:49.213Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:52:49.214Z [info]: Stock actualizado para todos los productos.
+2024-10-02T18:52:49.277Z [info]: Ticket creado:
+2024-10-02T18:52:51.796Z [info]: Correo electrónico enviado:
+2024-10-02T18:53:18.991Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:53:19.082Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:53:19.082Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177
+2024-10-02T18:53:20.893Z [debug]: Obteniendo los tickets del carrito para el User ID:
+2024-10-02T18:53:20.985Z [debug]: Contenido del carrito del usuario:
+2024-10-02T18:53:23.645Z [debug]: Iniciando confirmación de compra para el User ID:
+2024-10-02T18:53:23.839Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:53:23.939Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:53:24.037Z [debug]: Actualizando stock para el producto ID:
+2024-10-02T18:53:24.037Z [info]: Stock actualizado para todos los productos.
+2024-10-02T18:53:24.094Z [info]: Ticket creado:
+2024-10-02T18:53:26.040Z [info]: Correo electrónico enviado:
+2024-10-02T18:54:32.673Z [debug]: Iniciando la obtención de productos del carrito para el usuario:
+2024-10-02T18:54:32.717Z [warning]: Carrito no encontrado o productos vacíos para el usuario:
+2024-10-02T18:54:32.717Z [info]: Productos del carrito obtenidos exitosamente para el usuario: 66c39fe3cd0ee0090400c177

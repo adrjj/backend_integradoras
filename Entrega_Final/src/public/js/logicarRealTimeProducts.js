@@ -1,12 +1,10 @@
-
 const socket = io();
 
 // Función para agregar un producto a la lista de productos
 function addProductToList(productos) {
-  //  console.log("esto recibe de", productos);
     const productList = document.getElementById('productList');
-    // Limpiar la lista antes de agregar nuevos elementos
-    productList.innerHTML = '';
+
+    // No limpiar la lista antes de agregar nuevos elementos
     if (Array.isArray(productos)) {
         productos.forEach(producto => {
             const listItem = document.createElement('li');
@@ -20,19 +18,29 @@ function addProductToList(productos) {
     }
 }
 
+
 // Función para cargar la lista de productos cuando la página se carga inicialmente
 function loadInitialProductList() {
-    fetch('api/products') // Hacer una solicitud HTTP GET al servidor para obtener los productos
-        .then(response => response.json())
-        .then(productos => {
-            productos.forEach(product => {
-                addProductToList(productos);
-            });
+    fetch('/api/products/all') // Hacer una solicitud HTTP GET al servidor para obtener los productos
+        .then(response => response.json()) // Parsear la respuesta como JSON
+        .then(data => {
+            // Acceder a la propiedad 'payload' donde están los productos
+            const productos = data.payload;
+
+            // Verificar si 'productos' es un array antes de usar forEach
+            if (Array.isArray(productos)) {
+                productos.forEach(product => {
+                    addProductToList(product); // Añadir cada producto a la lista
+                });
+            } else {
+                console.error('La respuesta no contiene una lista de productos válida.');
+            }
         })
         .catch(error => {
             console.error('Error al obtener los productos:', error);
         });
 }
+
 
 
 // Escuchar el evento 'productAdded' y actualizar la lista de productos

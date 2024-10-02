@@ -56,6 +56,17 @@ class ProductDAO {
         }
     }
 
+    async getProductsAll() {
+        try {
+            const products = await productModel.find(); // Devuelve todos los productos sin paginación
+            return products; // Solo regresa los productos al repositorio
+        } catch (error) {
+            throw new Error(`Error al obtener los productos: ${error.message}`); // Maneja errores pero no responde con res
+        }
+    }
+    
+    
+
     async loadProducts() {
         try {
             const products = await productModel.find();

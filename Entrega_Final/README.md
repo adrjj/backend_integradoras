@@ -20,108 +20,58 @@ En este proyecto se utilizo de la biblioteca de node.js
     "@faker-js/faker": "^8.4.1",
     
 
-Este proyecto tiene la base de un ECOMERCE el paso mas importante es que esta conectado todo con la
-base de datos de MONGO db Atlas
+CARACTERISTICAS PRINCIPALES
+Este proyecto implementa un sistema de roles con tres tipos de usuarios:
 
-Cunentas con varias rutas
-api/products  (se maneja dede postman)
-api/carts (se maneja dede postman)
+1- Usuario (User): Usuario común que solo puede realizar compras.
 
-Chat interno 
-/chat (vista con handlebars)
+2-Administrador (Admin): Usuario con control total sobre:
+  -El CRUD de productos.
+  -La gestión de usuarios (puede eliminar usuarios inactivos).
+  -La capacidad de cambiar roles a otros usuarios.
 
-Carga de productos y eliminacion de los mismos por el ID
-/realtimeProducts (vista con handlebars)
+3-Usuario Premium (Premium): Puede realizar compras y crear productos.
 
-Visualizacion de todos los productos cargados en la base de datos
-/home (vista con handlebars) 
+REGISTRO
+ -La autenticación de usuarios se maneja con Passport.
+ -Los usuarios pueden registrarse utilizando su cuenta de GitHub o crear una cuenta local.
+ -Las sesiones permanecen activas mientras el usuario esté conectado.
 
-inicio de sesion usuarios
-api/session/login
-
-Registro de usuarios
-api/session/register
-
-Datos del perfil
-api/session/profile
-
-Carrito del usuario
-api/cart
-
-actualización para la Tercera preentrega.
-Ya podemos procesar la finalizacion de la compra emitiendo un ticket con los detalles y enviando
-este ticket Via mail...
-
-
-------------------- PERFILE DE USUARIO Y REGISTRO --------------------------
-CARRITO DEL USUARIO (UNICO POR CADA USUARIO REGISTRADO)
-![Texto Alternativo](./imagenes/carrto_unico_por_usuario.png)
-
-PERFIL DE USUARIO CON LINK AL CARRITO DE COMPRA
-![Texto Alternativo](./imagenes/profile.png)
-
-INICIO DE SESION CON GITHUB
-![Texto Alternativo](./imagenes/ingresar_github.png)
-
-INICIO DE SESION
-![Texto Alternativo](./imagenes/iniciar_session.png)
-
-REGISTRO DE USUARIOS
-![Texto Alternativo](./imagenes/registro.png)
+LOGIN
+ -Los tres roles mencionados (User, Admin, Premium) tienen diferentes permisos dentro de la plataforma.
+ -Cada usuario accede a funciones específicas según su rol.
 
 PERFIL
-![Texto Alternativo](./imagenes/perfil_usuario.png)
+-Los usuarios comunes (User) pueden solicitar un cambio de rol a Premium subiendo la documentación       requerida desde el panel de perfil.
+ -Proceso de compra
+ -Durante el proceso de compra, los productos se añaden al carrito, el cual se mantiene activo incluso si cierras la sesión. Puedes vaciar el carrito si decides no completar la compra.
+ -Al finalizar la compra, se genera un ticket con el número de ID de la transacción.
+Se envía un correo de confirmación al completar la compra, utilizando Nodemailer.
 
-VISTA ADMIN: se lo redigige a /realtimeproducts
-![Texto Alternativo](./imagenes/vista_para_el_usuario_admin.png)
+IMAGENES DEL PROYECTO
 
-VISTA USUARIO COMUN: se lo redirige a /products
-![Texto Alternativo](./imagenes/vista_para_el_usuario_comun.png)
+![Texto Alternativo](./imagenes/inicio_sesion.jpg)
 
+![Texto Alternativo](./imagenes/ingresar_github.png)
 
+![Texto Alternativo](./imagenes/perfil.jpg)
 
+![Texto Alternativo](./imagenes/productos.jpg)
 
---------------------------  PAGINADOS --------------
+![Texto Alternativo](./imagenes/producto_agregado.jpg)
 
+![Texto Alternativo](./imagenes/carrito.jpg)
 
+![Texto Alternativo](./imagenes/productos_listo_para_compra.jpg)
 
-PRODUCTOS PAGINADOS.
-![Texto Alternativo](./imagenes/products.png)
+![Texto Alternativo](./imagenes/ticket.jpg)
 
-PRODUCTOS DENTRO DEL CARRITO CON
-URL:http://localhost:8080/cart/6654a391db46bd58f8df45e3
+![Texto Alternativo](./imagenes/mail_ticket.jpg)
 
-![Texto Alternativo](./imagenes/porductos_carrito.png)
+![Texto Alternativo](./imagenes/CRUD_productos.jpg)
 
+![Texto Alternativo](./imagenes/lista_usuarios.jpg)
 
-
-------------------------- FILTROS ----------------------------
-
-
-
-![Texto Alternativo](./imagenes/api_products_category.png)
-
-![Texto Alternativo](./imagenes/api_products_limit_page.png)
-
-![Texto Alternativo](./imagenes/api_products_sort_mayor.png)
-
-![Texto Alternativo](./imagenes/api_products_total.png)
-
---------------------- CART ---------------------------------
-
-![Texto Alternativo](./imagenes/api_cart_borrar_producto.png)
-
-![Texto Alternativo](./imagenes/api_cart_guardar_agregar_cantidad.png)
-
-![Texto Alternativo](./imagenes/api_cart_guardar_agregar_producto.png)
-
-![Texto Alternativo](./imagenes/api_cart_guardar_porductos.png)
-
-
----------------Manejo De Errrores-----------------------------
-![Texto Alternativo](./imagenes/api_products_error_termial_detalle.png)
-
-![Texto Alternativo](./imagenes/api_products_error.png)
 
 
 

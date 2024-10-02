@@ -1,12 +1,15 @@
 <h1>Productos del carrito</h1>
+<div class="contTotalEnlace">
+<div class="contElace">
+<a href="/products"> <button> Productos</button></a>
 
+<a href="/api/sessions/profile"> <button>Perfil </button> </a>
 
-<a href="/products">Productos</a>
+<a href="/api/carts/:cid/purchase"> <button>Comprar Carrito </button> </a>
 
-<a href="/api/sessions/profile">Perfil</a>
+</div>
 
-<a href="/api/carts/:cid/purchase">Comprar Carrito</a>
-
+</div>
 <ul class="contTotalCard">
 
     {{#each products}}
@@ -14,7 +17,7 @@
     <li>
         <article class="contCard">
             <h2>{{title}}</h2> <!-- Cambiado de this.title a this.pid.title -->
-            <img src="{{thumbnail}}" alt="{{title}}"> <!-- Cambiado de this.thumbnail a this.pid.thumbnail -->
+            <img class="imgProduct" src="{{thumbnail}}" alt="{{title}}"> <!-- Cambiado de this.thumbnail a this.pid.thumbnail -->
             <p>{{description}}</p> <!-- Cambiado de this.description a this.pid.description -->
             <h3>${{price}}</h3> <!-- Cambiado de this.price a this.pid.price -->
             <p>Cantidad: {{quantity}}</p>
@@ -24,8 +27,7 @@
     {{/each}}
 </ul>
 
-
- <h2>Debug:</h2>
-<pre>{{{json products}}}</pre>   
+ 
 
 <script src="../js/logicaProducts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>
